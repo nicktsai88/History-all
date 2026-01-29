@@ -826,7 +826,7 @@
         // --- 初始化 ---
         document.addEventListener('DOMContentLoaded', () => {
             fetchMusicFromGitHub(); 
-            fetch('questions.json').then(res => res.json())
+            fetch('History4-L1-questions.json').then(res => res.json())
                 .then(data => { 
                     allQuestions = data; 
                     totalLevels = Math.ceil(allQuestions.length / ITEMS_PER_PAGE);
